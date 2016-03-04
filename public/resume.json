@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Epic Systems",
+    "other": "Software Tester",
+    "duration": "April 2015 - Present",
+    "description": [
+      "Working alongside software developers to develop and maintain quality software for customers around the world.",
+      "Thoroughly tested software using advanced techniques to ensure quality and find any bugs and issues."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "University of Illinois",
+    "other": "M.S. in Computer Science (In Progress)",
+    "duration": "December 2015 -- Present",
+    "description": ["Relevant coursework includes: "]
+  },
+  {
+    "id": 3,
+    "title": "University of California -- Irvine",
+    "other": "B.A. in International Studies",
+    "duration": "Graduated December 2011",
+    "description": ["Relevant coursework includes: "]
+  }
+]

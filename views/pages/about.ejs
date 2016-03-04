@@ -1,0 +1,68 @@
+<% include ../partials/head %> <!-- including head.ejs -->
+<header>
+  <% include ../partials/header %> <!-- including header.ejs -->
+</header>
+
+  <div class="callout large">
+    <div class="row column text-center">
+      <h1>Display Through Design</h1>
+      <p class="lead">A simple portfolio written with nodejs, by Anthony Belton.</p>
+      <a href="#" class="button large login">Login</a>
+      <a href="#" class="button large hollow signup">Sign up</a>
+   <% include ../partials/login %>
+    </div>
+  </div>
+  <hr>
+  <div class="row" ng-controller="aboutCtrl">
+  <h1><center>{{ title }}</center></h1>
+  <div class="row column">
+        <div>
+        <div class="callout-card alert radius">
+          <div class="card-label">
+            <div class="label-text">
+              Me
+            </div>
+          </div>
+          <div class="callout-card-content">
+            <div class="row who-i-am">
+              <div class="small-9 columns">
+                <h3 class="lead">	Who I Am</h3>
+                <p class="about-content">My name is Anthony William Belton, a graduate of the University of California, Irvine. I welcome you to my online portfolio. I hope to use my online portfolio as a way of connecting others with my resume and accomplishments, and as a way to personally continue to my hobby in web development and programming. Here you will be able to see a few examples of my work, both for fun and professionally. If you are interested in contacting me about anything, feel free to visit the contact me page and I will be sure to get back to you shortly.</p>
+              </div>
+              <div class="small-3 columns">
+                <center><img src="/public/images/me_rounded.png"></center>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  </div>
+<br />
+  <div class="row">
+<div class="medium-8 columns">
+  <div class="about-resume">
+    <h4><center>Resume</center></h4>
+      <div ng-repeat="job in resume">
+        <hr />
+        <h5>{{ job.title }}</h5>
+        <p><strong>{{ job.other }}</strong> - <i>{{ job.duration }}</i><p>
+        <ul>
+            <li ng-repeat="detail in job.description">{{ detail }}</li>
+        </ul>
+      </div>
+  </div>
+</div>
+<div class="medium-4 columns">
+  <div class="about-skills">
+    <h4><center>My Skills</center></h4>
+    <hr/>
+    <div ng-repeat="skill in skills">
+      <div class="skill"><b>{{ skill.lang }}</b> ... {{ skill.level }}<br />
+        <p class="skill-desc">{{ skill.description }}</p>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<% include ../partials/footer %> <!-- including header.ejs -->

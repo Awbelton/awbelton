@@ -1,0 +1,63 @@
+  <% include ../partials/head %> <!-- including head.ejs -->
+  <header>
+    <% include ../partials/header %> <!-- including header.ejs -->
+  </header>
+
+    <div class="callout large">
+      <div class="row column text-center">
+        <h1>Display Through Design</h1>
+        <p class="lead">A simple portfolio written with nodejs, by Anthony Belton.</p>
+        <a href="#" class="button large login">Login</a>
+        <a href="#" class="button large hollow signup">Sign up</a>
+      <% include ../partials/login %>
+      </div>
+    </div>
+    <div class="row about-me">
+      <div class="medium-6 columns medium-push-6">
+        <img class="thumbnail" src="/public/images/MainImg.png">
+      </div>
+      <div class="medium-6 columns medium-pull-6">
+        <h2 class="title">A Little About Me</h2>
+        <p>Hi there. My name is Anthony. I'm currently studying for my MS in Computer Science from the University of Illinois. I welcome you to my online portfolio. I hope to use my online portfolio as a way of connecting others with my resume and accomplishments, and as a way to personally continue to my hobby in web and software development. Here you will be able to see a few examples of my work, both for fun and professionally. If you are interested in contacting me about anything, feel free to visit the <a href="/contact">contact</a> me page.</p>
+      </div>
+    </div>
+    <div class="row my-skills">
+      <div class="medium-4 columns">
+        <h3 class="title">Photoshop</h3>
+        <p>Photoshop, my first love. Designing and slicing up layouts to look pretty on the web is something I've done for a long time.</p>
+      </div>
+      <div class="medium-4 columns">
+        <h3 class="title">Javascript</h3>
+        <p>Javascript and its various frameworks/libraries is something I've taken a keen interest in these days. From Angular to node, I've found Javascript to be an incredibly dynamic and exciting language to work with.</p>
+      </div>
+      <div class="medium-4 columns">
+        <h3 class="title">Others</h3>
+        <p>Some other languages I enjoy working include <strong>Python</strong>, <strong>Java</strong>, and <strong>C#</strong>. Python in particular is one I've familiarized myself with a bit over the last couple of years.</p>
+      </div>
+    </div>
+    <a href="#" class="hide-link">hide</a>
+    <hr>
+    <div class="row column">
+      <h3>Recent Posts</h3>
+      <ul class="main-posts">
+              <% for(var i=0; i < posts.length; i++) { %>
+                <div class="postbg">
+                  <li class="li-post"><strong><%= posts[i].pTitle %></strong></li>
+                <li class="li-author"><strong>Author:</strong> <%= posts[i].author %> <strong>at</strong> <%= posts[i].date %></li>
+                 <li class="li-content"><%= posts[i].content %></li>
+               </div>
+                 <br />
+              <% }; %>
+            </ul>
+    </div>
+    <hr>
+    <div class="row column">
+      <h3>Recent Work</h3>
+    </div>
+    <div class="row medium-up-3 large-up-4">
+      <div class="column">
+        <img class="thumbnail" src="http://placehold.it/550x550">
+      </div>
+  </div>
+
+  <% include ../partials/footer %> <!-- including header.ejs -->

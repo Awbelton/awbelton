@@ -1,0 +1,43 @@
+          <div class="loginform">
+        <div class="row">
+          <div class="medium-6 medium-centered large-4 large-centered columns">
+            <% if (message.length > 0) { %>
+              <div class="alert alert-danger"><%= message %></div>
+              <% } %>
+            <form id="loginF" name="login" action="/login" method="post" class="formbg">
+              <div class="row column log-in-form">
+                <h4 class="text-center">Log in with your email</h4>
+                <label>Email
+                  <input type="text" name="email" placeholder="Email@gmail.com">
+                </label>
+                <label>Password
+                  <input type="password" name="password" placeholder="Password">
+                </label>
+                <p><button type="submit" class="button expanded">Log In</button></p>
+                <p class="text-center"><a href="#">Forgot your password?</a></p>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div> <!-- end form div -->
+      <div class="suform">
+          <div class="row">
+            <div class="medium-6 medium-centered large-4 large-centered columns">
+              <% if (message.length > 0) { %>
+                <div class="alert alert-danger"><%= message %></div>
+                <% } %>
+              <form id="loginF" name="signup" action="/signup" method="post" class="formbg">
+                <div class="row column log-in-form">
+                  <h4 class="text-center">Sign up for an account</h4>
+                  <label>Email
+                    <input type="text" name="email" placeholder="Email@gmail.com">
+                  </label>
+                  <label>Password
+                    <input type="password" name="password" placeholder="Password">
+                  </label>
+                  <p><button type="submit" class="button expanded">Sign Up</button></p>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div> <!-- end form div -->
