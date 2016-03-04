@@ -16,7 +16,7 @@ var forms         = require('./controllers/forms');
 var routes        = require('./routes');
 var posts         = require('./controllers/posts');
 
-app.use(session({ secret: 'a4bpk187' })); // sessions! required for flash-messages
+app.use(session({ secret: 'supersecretkey1234' })); // sessions! required for flash-messages
 app.use(passport.initialize()); // passport start
 app.use(passport.session());
 app.use(flash()); // flash setup
