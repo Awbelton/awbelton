@@ -1,4 +1,4 @@
-var port          = process.env.port || 4000;
+var port          = process.env.port || 8080;
 var flash         = require('connect-flash');
 var express       = require('express');
 var app           = express();
