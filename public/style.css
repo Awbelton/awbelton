@@ -1,11 +1,11 @@
 @font-face {
     font-family: HighlandGothicLightFLF;
-    src: url(/public/fonts/HighlandGothicLightFLF.ttf);
+    src: url("/public/fonts/HighlandGothicLightFLF.ttf");
 }
 
 @font-face {
     font-family: Lato;
-    src: url(/public/fonts/Lato-Medium.ttf);
+    src: url("/public/fonts/Lato-Medium.ttf");
 }
 
 h3 {
