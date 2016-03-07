@@ -35,14 +35,15 @@
       </div>
     </div>
     <a href="#" class="hide-link">hide</a>
-    <hr>
+
     <div class="row column">
-      <h3>Recent Posts</h3>
+      <h3 class="title">Recent Posts</h3>
+      <br/>
       <ul class="main-posts">
               <% for(var i=0; i < posts.length; i++) { %>
                 <div class="postbg">
-                  <li class="li-post"><strong><%= posts[i].pTitle %></strong></li>
-                <li class="li-author"><strong>Author:</strong> <%= posts[i].author %> <strong>at</strong> <%= posts[i].date %></li>
+                 <li class="li-post"><strong><%= posts[i].pTitle %></strong></li>
+                 <li class="li-author"><strong>Author:</strong> <%= posts[i].author %></li>
                  <li class="li-content"><%= posts[i].content %></li>
                </div>
                  <br />

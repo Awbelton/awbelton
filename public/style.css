@@ -214,20 +214,19 @@ h3 {
 }
 
 .li-post {
-  font-size: 21px;
+  font-size: 26px;
   margin-bottom: 6px;
-  border-bottom:1px solid #828282;
   font-family: Lato;
 }
 
 .li-author {
-  font-size: 12px;
+  font-size: 13px;
   border-radius: 3px;
   font-family: Lato;
 }
 
 .li-content {
-  font-size:15px;
+  font-size:17px;
   margin-top: 6px;
   padding: 3px;
   font-family: Lato;
