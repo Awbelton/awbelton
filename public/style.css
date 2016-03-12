@@ -22,13 +22,15 @@ h3 {
 }
 
 .text-center h1 {
-  color: #781D13;
+  color: #610A00;
   font-family: Lato;
+  font-weight:bolder;
 }
 
 .lead {
   color: #000000;
   font-family: Lato;
+  font-weight:bolder;
 }
 
 .log-in-form {
