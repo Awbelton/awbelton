@@ -33,4 +33,12 @@ myApp.controller('portfolioCtrl', ['$scope', '$routeParams', function($scope, $r
 
 myApp.controller('contactCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
   $scope.title = "Contact Me";
+  $scope.focused = function(id) {
+    var elem = document.getElementById(id);
+    elem.placeholder = '';
+  };
+  $scope.refocused = function(id) {
+    var elem = document.getElementById(id);
+    elem.placeholder = id;
+  }
 }]);

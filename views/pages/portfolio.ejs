@@ -3,20 +3,24 @@
   <% include ../partials/header %> <!-- including header.ejs -->
 </header>
 
-  <div class="callout large">
-    <div class="row column text-center">
-      <h1>Display Through Design</h1>
-      <p class="lead">A simple portfolio written with nodejs, by Anthony Belton.</p>
-      <a href="#" class="button large login">Login</a>
-      <a href="#" class="button large hollow signup">Sign up</a>
-   <% include ../partials/login %>
-    </div>
+<div class="callout large">
+  <div class="row column text-center">
+    <h1>Display Through Design</h1>
+    <p class="lead">A simple portfolio written with nodejs, by Anthony Belton.</p>
+    <a href="#" class="button large login">Login</a>
+    <a href="#" class="button large hollow signup">Sign up</a>
+ <% include ../partials/login %>
   </div>
-  <hr>
+</div>
+
+<hr>
+  <div class="row" ng-controller="portfolioCtrl">
+  <h1><center>{{ title }}</center></h1>
   <div class="row column">
-    <h3 class="title">Portfolio</h3>
     <p>Come back soon!</p>
   </div>
+  
+</div>
 
 
 <% include ../partials/footer %> <!-- including header.ejs -->
