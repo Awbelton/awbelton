@@ -26,7 +26,12 @@
         <div id="boxes">
         <input type="text" name="author" placeholder="Username" class="username" required><br/>
         <input type="text" name="pTitle" placeholder="Title" class="username" required><br/>
-        <textarea name="content" placeholder="Content to add" class="content-post" required></textarea><br/>
+        <textarea name="content" id="content_post" placeholder="Content to add" class="content-post" required></textarea><br/>
+        <script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'content_post' );
+            </script>
       </div>
       <br/>
         <button type="submit" class="button">Submit</button>

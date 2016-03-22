@@ -19,6 +19,7 @@ h3 {
   border-top: 1px solid #436D7A;
   border-bottom: 2px solid #436D7A;
   z-index:0;
+  margin-top:2.5%;
 }
 
 .text-center h1 {
@@ -83,6 +84,11 @@ h3 {
 
 .top-bar {
   background-color: #292c2f;
+  position:fixed;
+  top:0px;
+  margin-bottom:100px;
+  z-index:1;
+  width:100%;
 }
 
 .top-bar ul {
