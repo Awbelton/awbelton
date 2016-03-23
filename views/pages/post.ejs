@@ -28,8 +28,6 @@
         <input type="text" name="pTitle" placeholder="Title" class="username" required><br/>
         <textarea name="content" id="content_post" placeholder="Content to add" class="content-post" required></textarea><br/>
         <script>
-                // Replace the <textarea id="editor1"> with a CKEditor
-                // instance, using default configuration.
                 CKEDITOR.replace( 'content_post' );
             </script>
       </div>
@@ -50,7 +48,22 @@
                       <% }; %>
                     </ul>
             </div>
-            <div class="update-portfolio-div"><h3>Update Portfiolio</h3></div>
+            <div class="update-portfolio-div"><h3>Update Portfiolio</h3>
+            <div class="portfolio_form">
+              <form id="new-portfolio" name="new-portfolio" action="/post" method="post">
+              <div id="boxes">
+              <input type="text" name="portTitle" placeholder="Title" class="portfolio" required><br/>
+              <input type="text" name="portImage" placeholder="Image" class="portfolio" required><br/>
+              <textarea name="portDescription" id="portfolio_post" placeholder="Portfolio Description" class="content-post" required></textarea><br/>
+              <script>
+                      CKEDITOR.replace( 'portfolio_post' );
+                  </script>
+              <button type="submit" class="button">Submit</button>
+              <button type="reset" class="button">Reset</button>
+            </form>
+            </div>
+            </div>
+          </div>
         </div>
   </div>
 

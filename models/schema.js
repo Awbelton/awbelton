@@ -13,6 +13,15 @@ var PostSchema = new Schema({
 
 var Post = mongoose.model('Post', PostSchema);
 
+// SCHEMA for Portfolio
+var portfolioSchema = new Schema({
+	portTitle: String,
+	portDescription: String,
+	portImage: String
+})
+
+var Portfolio = mongoose.model('Postfolio', portfolioSchema);
+
 // SCHEMA for Profiles / Accounts
 
 var userSchema = new Schema({
@@ -46,5 +55,6 @@ var Profile = mongoose.model('Profile', userSchema);
 
 module.exports = {
 	Post: Post,
-	Profile: Profile
+	Profile: Profile,
+	Portfolio: Portfolio
 };

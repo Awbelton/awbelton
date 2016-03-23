@@ -15,6 +15,7 @@ var controllers   = require('./controllers/controllers');
 var forms         = require('./controllers/forms');
 var routes        = require('./routes');
 var posts         = require('./controllers/posts');
+var portfolio     = require('./controllers/portfolio');
 
 app.use(session({ secret: 'supersecretkey1234' })); // sessions! required for flash-messages
 app.use(passport.initialize()); // passport start
@@ -41,7 +42,7 @@ controllers(app);
 forms(app, passport);
 app.get('/destroy/:id', posts.destroy);
 app.post('/post', posts.posts);
-//app.post('/submit', forms.create);
+app.post('/post', portfolio.portfolioPost);
 
 // connecting to server/port **********************************************
 app.listen(port);
