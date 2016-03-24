@@ -1,0 +1,36 @@
+<% include ../partials/head %> <!-- including head.ejs -->
+<header>
+  <% include ../partials/header %> <!-- including header.ejs -->
+</header>
+
+  <div class="callout large">
+    <div class="row column text-center">
+      <h1>Display Through Design</h1>
+      <p class="lead">A simple portfolio written in nodejs, by Anthony Belton.</p>
+      <a href="#" class="button large login">Login</a>
+      <a href="#" class="button large hollow signup">Sign up</a>
+   <% include ../partials/login %>
+    </div>
+  </div>
+  <hr>
+  <div class="row column">
+          <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+          <div class="post-menu"><span class="make-post"><a href="/post">Make Post</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="view-posts"><a href="/post">View Posts</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="update-portfolio"><a href="/post">Add to Portfolio</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="update-portfolio-2"><a href="#">Update Portfolio</a></span></div>
+
+            <div class="port-list">
+              <h3>Portfolio List:</h3>
+              <ul>
+                  <% for(var i=0; i < portfolio.length; i++) { %>
+                    <div class="postbg">
+                    <li class="li-post"><strong><%= portfolio[i].portTitle %></strong>&nbsp;&nbsp;<a href="#">edit</a>&nbsp;&nbsp;..&nbsp;&nbsp;<a href="/destroys/<%= portfolio[i]._id %>">delete</a></li>
+                       </div>
+                         <br />
+                      <% }; %>
+                    </ul>
+            </div>
+        </div>
+  </div>
+
+
+<% include ../partials/footer %> <!-- including header.ejs -->
