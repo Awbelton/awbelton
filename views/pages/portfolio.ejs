@@ -18,8 +18,28 @@
   <h1><center>{{ title }}</center></h1>
   <div class="row column">
     <p>Come back soon!</p>
-  </div>
-  
+      <div class="row">
+        <% for(var i=0; i < portfolio.length; i++) { %>
+      <div class="medium-4 columns">
+        <div class="card">
+          <div class="image">
+            <img src="<%- portfolio[i].portImage %>">
+            <span class="title"><%= portfolio[i].portTitle %></span>
+          </div>
+          <div class="content">
+            <p><%= portfolio[i].portDescription %></p>
+          </div>
+          <div class="action">
+            <a href='#'>Where this leads</a>
+          </div>
+        </div>
+      </div>
+      <% }; %>
+    </div>
+
+
+</div>
+</div>
 </div>
 
 

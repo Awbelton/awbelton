@@ -42,7 +42,8 @@ controllers(app);
 forms(app, passport);
 app.get('/destroy/:id', posts.destroy);
 app.post('/post', posts.posts);
-app.post('/post', portfolio.portfolioPost);
+app.get('/destroys/:id', portfolio.destroys);
+app.post('/portpost', portfolio.portfolioPost);
 
 // connecting to server/port **********************************************
 app.listen(port);
