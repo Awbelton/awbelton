@@ -8,6 +8,8 @@
     src: url("/public/fonts/Lato-Medium.ttf");
 }
 
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
 h3 {
   font-family: Lato;
 }
@@ -418,6 +420,12 @@ ul {
         position: absolute;
         left: -45%;
         top: 10%; } }
+
+.footer-title {
+  font-family: 'Ubuntu' !important;
+  font-size: 34px !important;
+  border-bottom: 2px solid red;
+}
 
 .logo {
   color: #fff;
