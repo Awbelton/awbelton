@@ -72,14 +72,19 @@ h3 {
         float: left;
         margin: 0 0 0 1.1rem; }
       .menu a:hover {
-        border-bottom: 2px solid #4A7096; } }
+        border-bottom: 1px solid #eee; } }
     .menu-text {
       color: #eee;
-      font-family: Lato;
+      font-family: "Lato";
       letter-spacing: 2px;
     }
     .menu-link {
-      font-family: Lato;
+      font-family: "Lato";
+      font-weight: bold;
+    }
+    
+    .menu-link a:hover {
+      color: #eee;
     }
 
 .footerMenu {
