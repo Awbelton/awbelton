@@ -395,6 +395,7 @@ ul {
   .footer .footer-links a {
     list-style: none;
     font-weight: normal;
+    font-family: "Lato";
     color: #fff;
     padding: 3rem 0 2rem;
     margin: 0;
@@ -420,6 +421,29 @@ ul {
         position: absolute;
         left: -45%;
         top: 10%; } }
+.fi-social-facebook {
+  background-image: url('/public/images/fb1.png');
+}
+
+.fi-social-facebook:hover {
+  background-image: url('/public/images/fb2.png');
+}
+
+.fi-social-twitter {
+  background-image: url('/public/images/tw.png');
+}
+
+.fi-social-twitter:hover {
+  background-image: url('/public/images/tw2.png');
+}
+
+.fi-social-linkedin {
+  background-image: url('/public/images/in1.png');
+}
+
+.fi-social-linkedin:hover {
+  background-image: url('/public/images/in2.png');
+}
 
 .footer-title {
   font-family: 'Ubuntu' !important;
