@@ -14,9 +14,16 @@ h3 {
   font-family: Lato;
 }
 
+body {
+  margin-bottom:50px;
+}
+
 .callout {
   /* background-color: #232736 !important; */
   background-image: url("/public/images/banner_image.png");
+  width: auto;
+  max-width:100%;
+  max-height: 100%;
   opacity: 0.8;
   border-top: 1px solid #436D7A;
   border-bottom: 2px solid #436D7A;
@@ -356,6 +363,8 @@ ul {
   font-size: 1.2rem;
   padding: 1rem;
   border-top: 2px solid black;
+  margin-bottom:0px;
+  width:100%;
    }
   .footer .social a {
     display: inline-block;
