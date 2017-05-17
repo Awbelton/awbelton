@@ -2,27 +2,27 @@
   {
     "lang": "Javascript",
     "level": 4,
-    "description": "My current side-project. JavaScript is interesting to me, will have to revisit this later on."
+    "description": "Have always enjoyed working with JS and its various frameworks/libraries. Currently messing around with React."
   },
   {
     "lang": "Python",
     "level": 4,
-    "description": "Personal interest in Python over the last year has had be investing a lot of time learning it. Hopefully in the future I can put it to good use."
+    "description": "Personal interest in Python over the last year has had be investing a lot of time learning it. Using it a lot more in current courses."
   },
   {
     "lang": "HTML/CSS",
-    "level": 5,
+    "level": 4,
     "description": "Have been working with HTML & CSS since well before High School. Something I am very comfortable with."
   },
   {
     "lang": "Photoshop",
     "level": 4,
-    "description": "Have worked with Photoshop since before high school. Pretty experience designing, slicing, and coding layouts."
+    "description": "Have worked with Photoshop since before high school. Pretty experienced with designing, slicing, and coding layouts."
   },
   {
     "lang": "node.js",
     "level": 3,
-    "description": "The backend for my portfolio! node has been a nice change of pace for me and loving it as a backend language."
+    "description": "The backend for my portfolio."
   },
   {
     "lang": "Angular JS",
@@ -36,7 +36,7 @@
   },
   {
     "lang": "Java",
-    "level": 1.5,
-    "description": "Learning for my Masters. Not super comfortable in it yet."
+    "level": 3,
+    "description": "Virtually all of my coursework done in Java, really enjoying it."
   }
 ]

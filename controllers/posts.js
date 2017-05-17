@@ -15,12 +15,14 @@ exports.destroy = function(req, res) {
 };
 
 exports.posts = function(req, res) {
-  var time = moment().format("hh:mm A MM/DD/YYYY");
+  //var time = moment().format("hh:mm A MM/DD/YYYY");
+  var time = new Date();
   new Post({
     author: req.body.author,
     content: req.body.content,
     pTitle: req.body.pTitle,
-    date: time
+    date: time,
+    //createdAt: created_at
   }).save(function(err, post){
     res.redirect('/');
   });

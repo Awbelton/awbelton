@@ -9,6 +9,8 @@ var PostSchema = new Schema({
 	content: String,
 	pTitle: String,
 	date: Date
+}, {
+	timestamps: { createdAt: 'created_at'}
 });
 
 var Post = mongoose.model('Post', PostSchema);

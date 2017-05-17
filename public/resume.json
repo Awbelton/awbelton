@@ -2,22 +2,28 @@
   {
     "id": 1,
     "title": "Epic Systems",
-    "other": "Software Tester",
+    "other": "Software QA",
     "duration": "April 2015 - Present",
     "description": [
       "Working alongside software developers to develop and maintain quality software for customers around the world.",
       "Thoroughly tested software using advanced techniques to ensure quality and find any bugs and issues."
     ]
-  },
-  {
+  }, {
     "id": 2,
-    "title": "University of Illinois",
+    "title": "Georgia Institute of Technology",
     "other": "M.S. in Computer Science (In Progress)",
-    "duration": "December 2015 -- Present",
-    "description": ["Relevant coursework includes: ", "Discrete Structures/Math", "Java Programming I"]
+    "duration": "January 2017 -- Present",
+    "description": ["Relevant coursework includes: ", "Computer Networking", "Database Concepts & Design"]
   },
   {
     "id": 3,
+    "title": "University of Illinois",
+    "other": "CS Coursework",
+    "duration": "December 2015 -- December 2016",
+    "description": ["Relevant coursework includes: ", "Discrete Structures/Math", "Java Programming I & II", "Data Structures & Algorithms"]
+  },
+  {
+    "id": 4,
     "title": "University of California -- Irvine",
     "other": "B.A. in International Studies",
     "duration": "Graduated December 2011",
